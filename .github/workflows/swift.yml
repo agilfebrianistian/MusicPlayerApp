@@ -33,7 +33,7 @@ jobs:
           xcodebuild clean build \
           -project MusicPlayerApp.xcodeproj \
           -scheme MusicPlayerApp \
-          -destination "platform=iOS Simulator,name=iPhone 15" \
+          -destination "platform=iOS Simulator,name=iPhone 16" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
       - name: Run Unit Tests
@@ -41,7 +41,7 @@ jobs:
           xcodebuild test \
           -project MusicPlayerApp.xcodeproj \
           -scheme MusicPlayerApp \
-          -destination "platform=iOS Simulator,name=iPhone 15" \
+          -destination "platform=iOS Simulator,name=iPhone 16" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
       - name: Run UI Tests
@@ -49,5 +49,5 @@ jobs:
           xcodebuild test \
           -project MusicPlayerApp.xcodeproj \
           -scheme MusicPlayerAppUITests \
-          -destination "platform=iOS Simulator,name=iPhone 15" \
+          -destination "platform=iOS Simulator,name=iPhone 16" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
